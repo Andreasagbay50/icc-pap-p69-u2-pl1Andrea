@@ -1,0 +1,133 @@
+[
+  {
+    "id": "E06-C001",
+    "args": [
+      "Sensor SENSOR sensor",
+      "sensor"
+    ],
+    "expected": [
+      "Sensor",
+      "SENSOR",
+      "sensor"
+    ]
+  },
+  {
+    "id": "E06-C002",
+    "args": [
+      "sensores sensor ultrasensor",
+      "sensor"
+    ],
+    "expected": [
+      "sensor"
+    ]
+  },
+  {
+    "id": "E06-C003",
+    "args": [
+      "sensor1 _sensor sensor_ 1sensor",
+      "sensor"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C004",
+    "args": [
+      "(sensor),sensor-sensor.",
+      "sensor"
+    ],
+    "expected": [
+      "sensor",
+      "sensor",
+      "sensor"
+    ]
+  },
+  {
+    "id": "E06-C005",
+    "args": [
+      "sensor\nsensor\tsensor",
+      "sensor"
+    ],
+    "expected": [
+      "sensor",
+      "sensor",
+      "sensor"
+    ]
+  },
+  {
+    "id": "E06-C006",
+    "args": [
+      "error aviso ERROR",
+      "error"
+    ],
+    "expected": [
+      "error",
+      "ERROR"
+    ]
+  },
+  {
+    "id": "E06-C007",
+    "args": [
+      "aaaa aa aaa",
+      "aa"
+    ],
+    "expected": [
+      "aa"
+    ]
+  },
+  {
+    "id": "E06-C008",
+    "args": [
+      "sensor",
+      ".*"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C009",
+    "args": [
+      "sensor",
+      ""
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C010",
+    "args": [
+      "",
+      "sensor"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C011",
+    "args": [
+      null,
+      "sensor"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C012",
+    "args": [
+      "sensor",
+      null
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C013",
+    "args": [
+      "Sensor",
+      "sen sor"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E06-C014",
+    "args": [
+      "sensór",
+      "sensor"
+    ],
+    "expected": []
+  }
+]

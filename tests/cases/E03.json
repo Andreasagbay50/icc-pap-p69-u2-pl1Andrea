@@ -1,0 +1,121 @@
+[
+  {
+    "id": "E03-C001",
+    "args": [
+      "ana@ups.edu.ec"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E03-C002",
+    "args": [
+      "Ana.Perez@est.ups.edu.ec"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E03-C003",
+    "args": [
+      "a1_b-c@UPS.EDU.EC"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E03-C004",
+    "args": [
+      "a@ups.edu.ec"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E03-C005",
+    "args": [
+      ".ana@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C006",
+    "args": [
+      "ana.@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C007",
+    "args": [
+      "ana..p@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C008",
+    "args": [
+      "ana@otro.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C009",
+    "args": [
+      "ana@sub.ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C010",
+    "args": [
+      "ana@ups.edu.ec.evil"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C011",
+    "args": [
+      "ana+tag@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C012",
+    "args": [
+      "josé@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C013",
+    "args": [
+      " ana@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C014",
+    "args": [
+      "ana@@ups.edu.ec"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C015",
+    "args": [
+      "ana@ups.edu.ec\n"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C016",
+    "args": [
+      ""
+    ],
+    "expected": false
+  },
+  {
+    "id": "E03-C017",
+    "args": [
+      null
+    ],
+    "expected": false
+  }
+]

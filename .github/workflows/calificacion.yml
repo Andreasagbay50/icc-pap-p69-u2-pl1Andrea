@@ -1,0 +1,41 @@
+name: Calificación PL1 - Expresiones regulares
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  calificar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v6.3.0
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12.14'
+      - name: Compilar, ejecutar pruebas y calcular nota
+        run: python tools/evaluate.py
+      - name: Publicar resumen
+        if: always()
+        shell: bash
+        run: |
+          if [ -f build/reports/calificacion.md ]; then
+            cat build/reports/calificacion.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo '## Evaluación no concluyente' >> "$GITHUB_STEP_SUMMARY"
+            echo 'Falló la preparación del entorno o el evaluador. Revisar los logs; no hay nota definitiva.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Conservar reportes
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: evaluacion-${{ github.sha }}
+          path: build/reports/
+          if-no-files-found: warn
+          retention-days: 30

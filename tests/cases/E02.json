@@ -1,0 +1,93 @@
+[
+  {
+    "id": "E02-C001",
+    "args": [
+      "T001"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E02-C002",
+    "args": [
+      "H999"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E02-C003",
+    "args": [
+      "P120"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E02-C004",
+    "args": [
+      "T000"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C005",
+    "args": [
+      "X001"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C006",
+    "args": [
+      "t001"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C007",
+    "args": [
+      "T01"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C008",
+    "args": [
+      "T0001"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C009",
+    "args": [
+      "T12A"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C010",
+    "args": [
+      " T001"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C011",
+    "args": [
+      "T001\n"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C012",
+    "args": [
+      ""
+    ],
+    "expected": false
+  },
+  {
+    "id": "E02-C013",
+    "args": [
+      null
+    ],
+    "expected": false
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "E05-C001",
+    "args": [
+      "192.168.1.10"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E05-C002",
+    "args": [
+      "0.0.0.0"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E05-C003",
+    "args": [
+      "255.255.255.255"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E05-C004",
+    "args": [
+      "10.2.30.249"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E05-C005",
+    "args": [
+      "256.1.1.1"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C006",
+    "args": [
+      "1.1.1.256"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C007",
+    "args": [
+      "01.2.3.4"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C008",
+    "args": [
+      "1.2.3"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C009",
+    "args": [
+      "1.2.3.4.5"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C010",
+    "args": [
+      "-1.2.3.4"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C011",
+    "args": [
+      "1.2.3.+4"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C012",
+    "args": [
+      "1x2x3x4"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C013",
+    "args": [
+      " 1.2.3.4"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C014",
+    "args": [
+      "1.2.3.4\n"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C015",
+    "args": [
+      ""
+    ],
+    "expected": false
+  },
+  {
+    "id": "E05-C016",
+    "args": [
+      null
+    ],
+    "expected": false
+  }
+]

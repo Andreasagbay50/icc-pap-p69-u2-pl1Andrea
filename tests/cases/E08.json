@@ -1,0 +1,140 @@
+[
+  {
+    "id": "E08-C001",
+    "args": [
+      "INFO 192.168.1.10 T001;35,4;C"
+    ],
+    "expected": [
+      "INFO|192.168.1.10|T001|35,4|C"
+    ]
+  },
+  {
+    "id": "E08-C002",
+    "args": [
+      "WARN 0.0.0.0 H205;80;PCT\nERROR 255.255.255.255 P019;-1,25;HPA"
+    ],
+    "expected": [
+      "WARN|0.0.0.0|H205|80|PCT",
+      "ERROR|255.255.255.255|P019|-1,25|HPA"
+    ]
+  },
+  {
+    "id": "E08-C003",
+    "args": [
+      "INFO 1.2.3.4 T001;0;C\r\nINFO 1.2.3.4 T001;0;C"
+    ],
+    "expected": [
+      "INFO|1.2.3.4|T001|0|C",
+      "INFO|1.2.3.4|T001|0|C"
+    ]
+  },
+  {
+    "id": "E08-C004",
+    "args": [
+      "DEBUG 1.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C005",
+    "args": [
+      "info 1.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C006",
+    "args": [
+      "INFO 256.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C007",
+    "args": [
+      "INFO 01.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C008",
+    "args": [
+      "INFO 1.2.3.4 H001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C009",
+    "args": [
+      "INFO  1.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C010",
+    "args": [
+      "INFO\t1.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C011",
+    "args": [
+      " INFO 1.2.3.4 T001;2;C"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C012",
+    "args": [
+      "INFO 1.2.3.4 T001;2;C extra"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C013",
+    "args": [
+      "basura\nERROR 10.0.0.1 T009;-4;C\nWARN 1.2.3.256 H001;2;PCT"
+    ],
+    "expected": [
+      "ERROR|10.0.0.1|T009|-4|C"
+    ]
+  },
+  {
+    "id": "E08-C014",
+    "args": [
+      ""
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C015",
+    "args": [
+      null
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C016",
+    "args": [
+      "\nINFO 1.2.3.4 T001;2;C\n"
+    ],
+    "expected": [
+      "INFO|1.2.3.4|T001|2|C"
+    ]
+  },
+  {
+    "id": "E08-C017",
+    "args": [
+      "INFO 1.2.3.4 T001;2;C\rWARN 1.2.3.4 H001;3;PCT"
+    ],
+    "expected": []
+  },
+  {
+    "id": "E08-C018",
+    "args": [
+      "WARN 1.2.3.4 T000;2;C"
+    ],
+    "expected": []
+  }
+]

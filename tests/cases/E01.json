@@ -1,0 +1,86 @@
+[
+  {
+    "id": "E01-C001",
+    "args": [
+      "sensor"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E01-C002",
+    "args": [
+      "abcd"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E01-C003",
+    "args": [
+      "abcdefghijkl"
+    ],
+    "expected": true
+  },
+  {
+    "id": "E01-C004",
+    "args": [
+      "abc"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C005",
+    "args": [
+      "abcdefghijklm"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C006",
+    "args": [
+      "Sensor"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C007",
+    "args": [
+      "sens0r"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C008",
+    "args": [
+      "señal"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C009",
+    "args": [
+      " sensor"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C010",
+    "args": [
+      "sensor\n"
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C011",
+    "args": [
+      ""
+    ],
+    "expected": false
+  },
+  {
+    "id": "E01-C012",
+    "args": [
+      null
+    ],
+    "expected": false
+  }
+]
